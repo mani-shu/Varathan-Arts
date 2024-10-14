@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #ffc107a1;
+    color: white;
+    padding: 1rem 0;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+.logo1{
+    width: 50px;
+    height: 50px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#home {
+    background-color: #e8e8e8;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#home .intro h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#home .intro p {
+    font-size: 20px;
+    color: #666;
+}
+
+#gallery {
+    padding: 50px;
+    background-color: white;
+}
+
+#gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Smaller grid for better mobile display */
+    gap: 20px;
+}
+
+.art-piece {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.art-piece img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#about {
+    padding: 50px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+#about p {
+    font-size: 18px;
+    width: 80%; /* Wider for smaller screens */
+    margin: 0 auto;
+}
+
+#contact {
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 80%; /* Reduced width for mobile screens */
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    #home .intro h1 {
+        font-size: 36px; /* Smaller heading on mobile */
+    }
+
+    #home .intro p {
+        font-size: 16px; /* Smaller subheading */
+    }
+
+    header nav ul li {
+        margin: 0 10px; /* Reduce spacing between nav items */
+    }
+
+    form input, form textarea {
+        width: 90%; /* Expand form fields for smaller screens */
+    }
+
+    #about p {
+        width: 90%; /* Wider text block for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #home .intro h1 {
+        font-size: 28px; /* Further reduce heading size on very small screens */
+    }
+
+    #home .intro p {
+        font-size: 14px;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack navigation items vertically on small screens */
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
